@@ -1,0 +1,1 @@
+2023-06-08 21:06:18 - INFO - O servidor foi iniciado no endereço 127.0.0.1:8088.
