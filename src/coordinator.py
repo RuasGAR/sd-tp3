@@ -123,6 +123,7 @@ def terminal_handler():
         elif (command == 3):
             print("Você selecionou a opção 3!\n")
             kill_program = True
+            
 
 
 if __name__ == "__main__":
@@ -136,7 +137,7 @@ if __name__ == "__main__":
     # main algorithm
     while kill_program == False:
         
-        message_arrived.wait()
+        message_arrived.wait(timeout=10)        
 
         message_mutex.acquire()
         m_type,pid,_ = message.split('|')
@@ -164,7 +165,6 @@ if __name__ == "__main__":
 
             if request_queue.empty():
                 connections_mutex.acquire()
-                print(connections)
                 connections[pid]["socket_conn"].send(GRANT_MESSAGE)
                 connections[pid]["counter"] += 1
                 connections_mutex.release()
