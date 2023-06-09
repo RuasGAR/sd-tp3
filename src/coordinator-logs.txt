@@ -1,0 +1,4 @@
+2023-06-09 00:55:41 - INFO - O servidor foi iniciado no endereço 127.0.0.1:8088.
+2023-06-09 00:55:45 - INFO - O endereço 36192 estabeleceu conexão com o servidor.
+2023-06-09 00:55:45 - INFO - Mensagem recebida: 3|36192|00; Origem: 36192
+2023-06-09 00:55:45 - INFO - Mensagem enviada: b'2|8088|000'; Destino: 36192

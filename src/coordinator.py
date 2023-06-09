@@ -2,73 +2,97 @@ import threading
 import logging
 import socket
 import queue
+from utils import fill_length
 
 format = "%(asctime)s - %(levelname)s - %(message)s"
-logging.basicConfig(filename='log.txt',format=format, level=logging.DEBUG,datefmt='%Y-%m-%d %H:%M:%S')
+logging.basicConfig(
+    filename='coordinator-logs.txt',
+    filemode='w',
+    format=format, 
+    level=logging.DEBUG,
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
 
-# Variáveis globais
+# CONSTANTES
+GRANT = 2
+HOST = "127.0.0.1"
+PORT = 8088
+GRANT_MESSAGE = fill_length(f"{GRANT}|{PORT}|").encode()
+
+# [VARIÁVEIS GLOBAIS]
 request_queue = queue.Queue()
 queue_mutex = threading.Semaphore(1)
 # dicionário aninhado a ser preenchido da seguinte forma {client_addr:{socket_conn, counter}}
 connections = {} 
 connections_mutex = threading.Semaphore(1)
-kill_event = threading.Event()
+message = ""
+message_mutex = threading.Semaphore(1)
+message_arrived = threading.Event()
+kill_program = False
 
 
-def build_server(host, port):
+def server_handler():
 
     """ 
-        Dados host e port, inicia um servidor de conexões TCP, responsável por receber clientes
+        Inicia um servidor de conexões TCP, responsável por receber clientes
         e encaminhar seu conteúdo ao algoritmo de exclusão mútua distribuído.
     """
     
-    global connections, connections_mutex, queue_mutex, request_queue 
+    global connections, connections_mutex 
+    global request_queue, queue_mutex 
+    global message, message_mutex
+    global kill_program
 
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.bind((host,port))
+    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+    with server_socket as s:
+        s.bind((HOST,PORT))
         s.listen()
-        logging.info(f"O servidor foi iniciado no endereço {host}:{port}.")
+        logging.info(f"O servidor foi iniciado no endereço {HOST}:{PORT}.")
 
-        while True:
+        while kill_program == False:
             conn, addr = s.accept()
             # Como a princípio usamos sempre o mesmo IP, vamos usar as portas como único
             # identificador de endereço em serviço
             addr_port = addr[1]
-
             connections_mutex.acquire()
             if addr_port not in connections.keys():
-                connections[addr_port] = {"socket_conn":conn}
+                connections[addr_port] = {"socket_conn":conn, "counter":0}
             connections_mutex.release()
-            with conn:
-                logging.info(f"O endereço {addr_port} estabeleceu conexão com o servidor.")
-                # incluir algum tratamento de erro
-                data = conn.recv(1024).decode("ascii")
-                #print(f"data {data}")
-                
+            
+            logging.info(f"O endereço {addr_port} estabeleceu conexão com o servidor.")
+            message_mutex.acquire()
+            message = conn.recv(10).decode("ascii")
+            message_mutex.release()
+            logging.info(f"Mensagem recebida: {message}; Origem: {addr_port}")
+            message_arrived.set()   
+        
+        s.close()
+    logging.info("Servidor encerrado.")
+    exit()
 
-def terminal_watcher():
+def terminal_handler():
     """ 
-        Recebe um evento (Threading.Event) e uma instrução (int) selecionada via terminal.
-        Executa as devidas ações de acordo com o enunciado do trabalho.
+        Função de background para interface com usuário.
+        O processamento do input segue as recomendações do enunciado do trabalho.
     """
 
     global queue_mutex,request_queue
     global connections,connections_mutex
-    global kill_event
+    global kill_program
 
     instructions = [
-        "1)Print current state of the request queue",
-        "2)Print how many times each client process has been answered",
-        "3)Terminate coordinator program"
+        "1)Imprimir o estado atual da fila de pedidos",
+        "2)Imprimir quantidade de vezes em que cada processo foi atendido",
+        "3)Finalizar programa coordenador"
     ]
 
-    while True:    
-    
+    while kill_program == False:    
+
         # Grid de comandos básicos
         print("Digite o número correspondente para acionar alguma das instruções abaixo:")
         for inst in instructions:
             print(inst)
-        print('\n')
 
         # Tomando input
         try:
@@ -92,41 +116,64 @@ def terminal_watcher():
             print("Você selecionou a opção 2!\n")
             connections_mutex.acquire()
             for p,info in connections.items():
-                print(f"Process on address {p}: {info} requests answered.")
+                print(f"Processo {p}: {info['counter']} pedidos concedidos.")
             connections_mutex.release()
             print('\n')
         
         elif (command == 3):
             print("Você selecionou a opção 3!\n")
-            try:
-                check = int(input("Você tem certeza que deseja encerrar o programa? (1 - Sim; 2- Não)"))
-            except Exception as e:
-                logging.exception("Um erro ocorreu ao fazer a leitura do comando. Veja mais informações abaixo.")
-                print(e)
-                continue
-
-            if check == 1:
-                kill_event.set()
-            else:
-                continue       
-            
+            kill_program = True
 
 
 if __name__ == "__main__":
 
-    thread_map = {
-        "terminal_watcher":terminal_watcher,
-        "server":build_server
-    }
+    terminal = threading.Thread(target=terminal_handler, name="terminal", daemon=True)
+    server = threading.Thread(target=server_handler, name="server", daemon=True)
 
-    terminal_handler = threading.Thread(target=thread_map["terminal_watcher"])
-    server = threading.Thread(target=thread_map["server"],args=("127.0.0.1",8088))
-
-    terminal_handler.start()
+    terminal.start()
     server.start()
 
-    server.join()
-    terminal_handler.join()
-
     # main algorithm
-    
+    while kill_program == False:
+        
+        message_arrived.wait()
+
+        message_mutex.acquire()
+        m_type,pid,_ = message.split('|')
+        message_mutex.release()
+        pid = int(pid)
+
+        if m_type == 1: # release 
+            
+            # pega o próximo da fila
+            queue_mutex.acquire()
+            if not request_queue.empty():
+                next_client_id = request_queue.get()
+            queue_mutex.release()
+
+            # faz o envio da mensagem de liberação
+            connections_mutex.acquire()
+            connections[next_client_id]["socket_conn"].send(GRANT_MESSAGE)
+            connections_mutex[next_client_id]["counter"] += 1
+            connections_mutex.release()
+            logging.info(f"Mensagem enviada: {str(GRANT_MESSAGE)}; Destino: {next_client_id}")
+
+        else: # automaticamente, é um pedido
+            
+            queue_mutex.acquire()
+
+            if request_queue.empty():
+                connections_mutex.acquire()
+                print(connections)
+                connections[pid]["socket_conn"].send(GRANT_MESSAGE)
+                connections[pid]["counter"] += 1
+                connections_mutex.release()
+                logging.info(f"Mensagem enviada: {str(GRANT_MESSAGE)}; Destino: {pid}")
+            else:
+                request_queue.put(pid)
+            
+            queue_mutex.release()
+        
+        message_arrived.clear()
+
+    exit()
