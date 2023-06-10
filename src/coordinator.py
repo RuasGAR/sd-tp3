@@ -28,7 +28,6 @@ connections_mutex = threading.Semaphore(1)
 message = ""
 message_mutex = threading.Semaphore(1)
 message_arrived = threading.Event()
-user_input_warning = threading.Event()
 kill_program = False
 
 
