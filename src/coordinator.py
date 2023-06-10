@@ -17,7 +17,7 @@ logging.basicConfig(
 GRANT = 2
 HOST = "127.0.0.1"
 PORT = 8088
-GRANT_MESSAGE = fill_length(f"{GRANT}|{PORT}|").encode()
+GRANT_MESSAGE = fill_length(f"{GRANT}|{PORT}|")
 
 # [VARIÁVEIS GLOBAIS]
 request_queue = queue.Queue()
@@ -28,6 +28,7 @@ connections_mutex = threading.Semaphore(1)
 message = ""
 message_mutex = threading.Semaphore(1)
 message_arrived = threading.Event()
+user_input_warning = threading.Event()
 kill_program = False
 
 
@@ -137,7 +138,11 @@ if __name__ == "__main__":
     # main algorithm
     while kill_program == False:
         
-        message_arrived.wait(timeout=10)        
+        message_arrived.wait(timeout=10)
+
+        # necessário checar kill_program caso tenha sido setado enquanto a thread principal esperava
+        if(kill_program):
+            exit()
 
         message_mutex.acquire()
         m_type,pid,_ = message.split('|')
@@ -154,10 +159,10 @@ if __name__ == "__main__":
 
             # faz o envio da mensagem de liberação
             connections_mutex.acquire()
-            connections[next_client_id]["socket_conn"].send(GRANT_MESSAGE)
+            connections[next_client_id]["socket_conn"].send(GRANT_MESSAGE.encode())
             connections_mutex[next_client_id]["counter"] += 1
             connections_mutex.release()
-            logging.info(f"Mensagem enviada: {str(GRANT_MESSAGE)}; Destino: {next_client_id}")
+            logging.info(f"Mensagem enviada: {GRANT_MESSAGE}; Destino: {next_client_id}")
 
         else: # automaticamente, é um pedido
             
@@ -165,10 +170,10 @@ if __name__ == "__main__":
 
             if request_queue.empty():
                 connections_mutex.acquire()
-                connections[pid]["socket_conn"].send(GRANT_MESSAGE)
+                connections[pid]["socket_conn"].send(GRANT_MESSAGE.encode())
                 connections[pid]["counter"] += 1
                 connections_mutex.release()
-                logging.info(f"Mensagem enviada: {str(GRANT_MESSAGE)}; Destino: {pid}")
+                logging.info(f"Mensagem enviada: {GRANT_MESSAGE}; Destino: {pid}")
             else:
                 request_queue.put(pid)
             
