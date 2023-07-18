@@ -11,15 +11,15 @@ def validate():
             continue
         if ("[S] Grant" in line):
             if (len(grants) != len(releases)):
-                print(line)
-                print(len(grants))
-                print(len(releases))
-                raise Exception("Invalid log file: invalid grants and releases sequence")
+                print(f"\nO erro está na linha:\n{line}")
+                print(f"Até esta linha houve {len(grants)} grants")
+                print(f"Até esta linha houve {len(releases)} releases")
+                raise Exception("Invalid log file: invalid grants and releases sequence, there are more grants than releases")
             grants.append(int(line.split("-")[1]))
             continue
         if ("[R] Release" in line):
             if (len(releases) != len(grants) - 1):
-                raise Exception("Invalid log file: invalid grants and releases sequence")
+                raise Exception("Invalid log file: invalid grants and releases sequence, something is wrong with your releases")
             releases.append(int(line.split("-")[1]))
             continue
 
