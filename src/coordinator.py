@@ -63,7 +63,7 @@ def server_handler():
 
             # Adicionando o endereço ao dicionário de gerenciamento
             connections_mutex.acquire()
-            if addr not in connections.keys():
+            if addr_port not in connections.keys():
                 connections[addr_port] = {"counter":0}
             connections_mutex.release()
             
@@ -131,6 +131,7 @@ def terminal_handler():
         elif (command == 3):
             print("Você selecionou a opção 3!\n")
             print("O processo coordenador será encerrado.\n")
+            logging.info("O coordenador foi encerrado")
             kill_program = True
             
 
@@ -184,6 +185,7 @@ if __name__ == "__main__":
                     
                     connections_mutex.acquire()
                     connections[next_client_id]["counter"] += 1
+                    print(connections)
                     connections_mutex.release()
 
                 else:
@@ -204,6 +206,7 @@ if __name__ == "__main__":
                     # Contabiliza acessos
                     connections_mutex.acquire()
                     connections[pid]["counter"] += 1
+                    print(connections)
                     connections_mutex.release()
 
                 else: # vai pra fila
@@ -223,6 +226,7 @@ if __name__ == "__main__":
                 # Contabiliza acessos
                 connections_mutex.acquire()
                 connections[next_client_id]["counter"] += 1
+                print(connections)
                 connections_mutex.release()
 
     exit()
