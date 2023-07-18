@@ -55,11 +55,16 @@ def server_handler():
             
             data, addr = s.recvfrom(10)
             data = data.decode("ascii")
+            m_type, destination, _ = data.split('|')
             # Como a princípio usamos sempre o mesmo IP, vamos usar as portas como único
             # identificador de endereço em serviço
             addr_port = addr[1]
 
-            logging.info(f"Mensagem recebida: {data}; Origem: {addr_port}")
+            if int(m_type) == 1:
+                logging.info(f"Mensagem recebida: [R] Request {data}; Origem: {addr_port}")
+            elif int(m_type) == 3:
+                logging.info(f"Mensagem recebida: [R] Release {data}; Origem: {addr_port}")
+            
             
             # pondo no dicionário
             connections_mutex.acquire()
@@ -169,11 +174,14 @@ if __name__ == "__main__":
                 # faz o envio da mensagem de liberação
                 with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
                     s.sendto(GRANT_MESSAGE.encode(),(HOST,next_client_id))
-                    logging.info(f"Mensagem enviada: {GRANT_MESSAGE}; Destino: {next_client_id}")
+                    logging.info(f"Mensagem enviada: [S] Grant {GRANT_MESSAGE}; Destino: {next_client_id}")
                 
                 connections_mutex.acquire()
                 connections[next_client_id]["counter"] += 1
                 connections_mutex.release()
+
+            else:
+                logging.info("Fila de pedidos vazia. Nenhum processo em espera.")
 
             queue_mutex.release()
 
@@ -181,13 +189,13 @@ if __name__ == "__main__":
             
             queue_mutex.acquire()
 
-            if request_queue.empty():
+            if request_queue.empty(): 
 
                 # Concede acesso imediato
                 with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
                     s.sendto(GRANT_MESSAGE.encode(),(HOST,pid))
 
-                logging.info(f"Mensagem enviada: {GRANT_MESSAGE}; Destino: {pid}")
+                logging.info(f"Mensagem enviada: [S] Grant {GRANT_MESSAGE}; Destino: {pid}")
                 
                 # Contabiliza acessos
                 connections_mutex.acquire()

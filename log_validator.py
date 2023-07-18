@@ -1,5 +1,5 @@
 def validate():
-    f = open("log.txt", "r")
+    f = open("src/coordinator-logs.txt", "r")
     lines = f.readlines()
     requests = []
     grants = []
