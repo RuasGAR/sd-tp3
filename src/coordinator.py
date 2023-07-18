@@ -185,7 +185,6 @@ if __name__ == "__main__":
                     
                     connections_mutex.acquire()
                     connections[next_client_id]["counter"] += 1
-                    print(connections)
                     connections_mutex.release()
 
                 else:
@@ -206,7 +205,6 @@ if __name__ == "__main__":
                     # Contabiliza acessos
                     connections_mutex.acquire()
                     connections[pid]["counter"] += 1
-                    print(connections)
                     connections_mutex.release()
 
                 else: # vai pra fila
@@ -226,7 +224,6 @@ if __name__ == "__main__":
                 # Contabiliza acessos
                 connections_mutex.acquire()
                 connections[next_client_id]["counter"] += 1
-                print(connections)
                 connections_mutex.release()
 
     exit()

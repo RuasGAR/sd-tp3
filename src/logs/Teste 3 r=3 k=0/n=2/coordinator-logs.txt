@@ -1,0 +1,21 @@
+2023-07-18 14:20:27.247 - INFO - O servidor foi iniciado no endereço 127.0.0.1:8088.
+2023-07-18 14:20:34.814 - INFO - Mensagem recebida: [R] Request 1|7628|000; Origem: 7628
+2023-07-18 14:20:34.814 - INFO - Mensagem recebida: [R] Request 1|22436|00; Origem: 22436
+2023-07-18 14:20:34.814 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 7628
+2023-07-18 14:20:34.830 - INFO - Mensagem recebida: [R] Release 3|7628|000; Origem: 7628
+2023-07-18 14:20:34.830 - INFO - Mensagem recebida: [R] Request 1|7628|000; Origem: 7628
+2023-07-18 14:20:34.830 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22436
+2023-07-18 14:20:34.833 - INFO - Mensagem recebida: [R] Release 3|22436|00; Origem: 22436
+2023-07-18 14:20:34.835 - INFO - Mensagem recebida: [R] Request 1|22436|00; Origem: 22436
+2023-07-18 14:20:34.835 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 7628
+2023-07-18 14:20:34.845 - INFO - Mensagem recebida: [R] Release 3|7628|000; Origem: 7628
+2023-07-18 14:20:34.845 - INFO - Mensagem recebida: [R] Request 1|7628|000; Origem: 7628
+2023-07-18 14:20:34.845 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22436
+2023-07-18 14:20:34.861 - INFO - Mensagem recebida: [R] Release 3|22436|00; Origem: 22436
+2023-07-18 14:20:34.861 - INFO - Mensagem recebida: [R] Request 1|22436|00; Origem: 22436
+2023-07-18 14:20:34.861 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 7628
+2023-07-18 14:20:34.877 - INFO - Mensagem recebida: [R] Release 3|7628|000; Origem: 7628
+2023-07-18 14:20:34.877 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22436
+2023-07-18 14:20:34.893 - INFO - Mensagem recebida: [R] Release 3|22436|00; Origem: 22436
+2023-07-18 14:20:34.893 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:20:41.188 - INFO - O coordenador foi encerrado

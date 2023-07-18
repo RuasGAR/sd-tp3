@@ -1,0 +1,33 @@
+2023-07-18 13:42:32.371 - INFO - O servidor foi iniciado no endereço 127.0.0.1:8088.
+2023-07-18 13:42:37.677 - INFO - Mensagem recebida: [R] Request 1|16076|00; Origem: 16076
+2023-07-18 13:42:37.677 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 16076
+2023-07-18 13:42:37.693 - INFO - Mensagem recebida: [R] Request 1|6764|000; Origem: 6764
+2023-07-18 13:42:38.690 - INFO - Mensagem recebida: [R] Release 3|16076|00; Origem: 16076
+2023-07-18 13:42:38.690 - INFO - Mensagem recebida: [R] Request 1|16076|00; Origem: 16076
+2023-07-18 13:42:38.690 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 6764
+2023-07-18 13:42:39.708 - INFO - Mensagem recebida: [R] Release 3|6764|000; Origem: 6764
+2023-07-18 13:42:39.708 - INFO - Mensagem recebida: [R] Request 1|6764|000; Origem: 6764
+2023-07-18 13:42:39.708 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 16076
+2023-07-18 13:42:40.720 - INFO - Mensagem recebida: [R] Release 3|16076|00; Origem: 16076
+2023-07-18 13:42:40.720 - INFO - Mensagem recebida: [R] Request 1|16076|00; Origem: 16076
+2023-07-18 13:42:40.720 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 6764
+2023-07-18 13:42:41.735 - INFO - Mensagem recebida: [R] Release 3|6764|000; Origem: 6764
+2023-07-18 13:42:41.735 - INFO - Mensagem recebida: [R] Request 1|6764|000; Origem: 6764
+2023-07-18 13:42:41.735 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 16076
+2023-07-18 13:42:42.750 - INFO - Mensagem recebida: [R] Release 3|16076|00; Origem: 16076
+2023-07-18 13:42:42.750 - INFO - Mensagem recebida: [R] Request 1|16076|00; Origem: 16076
+2023-07-18 13:42:42.751 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 6764
+2023-07-18 13:42:43.763 - INFO - Mensagem recebida: [R] Release 3|6764|000; Origem: 6764
+2023-07-18 13:42:43.763 - INFO - Mensagem recebida: [R] Request 1|6764|000; Origem: 6764
+2023-07-18 13:42:43.764 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 16076
+2023-07-18 13:42:44.782 - INFO - Mensagem recebida: [R] Release 3|16076|00; Origem: 16076
+2023-07-18 13:42:44.782 - INFO - Mensagem recebida: [R] Request 1|16076|00; Origem: 16076
+2023-07-18 13:42:44.783 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 6764
+2023-07-18 13:42:45.803 - INFO - Mensagem recebida: [R] Release 3|6764|000; Origem: 6764
+2023-07-18 13:42:45.803 - INFO - Mensagem recebida: [R] Request 1|6764|000; Origem: 6764
+2023-07-18 13:42:45.803 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 16076
+2023-07-18 13:42:46.812 - INFO - Mensagem recebida: [R] Release 3|16076|00; Origem: 16076
+2023-07-18 13:42:46.812 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 6764
+2023-07-18 13:42:47.824 - INFO - Mensagem recebida: [R] Release 3|6764|000; Origem: 6764
+2023-07-18 13:42:47.824 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 13:42:59.545 - INFO - O coordenador foi encerrado

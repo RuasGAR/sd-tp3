@@ -1,0 +1,646 @@
+2023-07-18 14:23:35.648 - INFO - O servidor foi iniciado no endereço 127.0.0.1:8088.
+2023-07-18 14:23:48.459 - INFO - Mensagem recebida: [R] Request 1|21084|00; Origem: 21084
+2023-07-18 14:23:48.460 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 21084
+2023-07-18 14:23:48.602 - INFO - Mensagem recebida: [R] Release 3|21084|00; Origem: 21084
+2023-07-18 14:23:48.602 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:48.652 - INFO - Mensagem recebida: [R] Request 1|21084|00; Origem: 21084
+2023-07-18 14:23:48.652 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 21084
+2023-07-18 14:23:48.853 - INFO - Mensagem recebida: [R] Release 3|21084|00; Origem: 21084
+2023-07-18 14:23:48.853 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:48.933 - INFO - Mensagem recebida: [R] Request 1|21084|00; Origem: 21084
+2023-07-18 14:23:48.934 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 21084
+2023-07-18 14:23:49.171 - INFO - Mensagem recebida: [R] Release 3|21084|00; Origem: 21084
+2023-07-18 14:23:49.171 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:49.924 - INFO - Mensagem recebida: [R] Request 1|21604|00; Origem: 21604
+2023-07-18 14:23:49.924 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 21604
+2023-07-18 14:23:50.067 - INFO - Mensagem recebida: [R] Release 3|21604|00; Origem: 21604
+2023-07-18 14:23:50.067 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:50.146 - INFO - Mensagem recebida: [R] Request 1|19196|00; Origem: 19196
+2023-07-18 14:23:50.146 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19196
+2023-07-18 14:23:50.290 - INFO - Mensagem recebida: [R] Request 1|21604|00; Origem: 21604
+2023-07-18 14:23:50.447 - INFO - Mensagem recebida: [R] Release 3|19196|00; Origem: 19196
+2023-07-18 14:23:50.447 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 21604
+2023-07-18 14:23:50.604 - INFO - Mensagem recebida: [R] Request 1|2056|000; Origem: 2056
+2023-07-18 14:23:50.700 - INFO - Mensagem recebida: [R] Release 3|21604|00; Origem: 21604
+2023-07-18 14:23:50.700 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 2056
+2023-07-18 14:23:50.734 - INFO - Mensagem recebida: [R] Release 3|2056|000; Origem: 2056
+2023-07-18 14:23:50.734 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:50.734 - INFO - Mensagem recebida: [R] Request 1|2056|000; Origem: 2056
+2023-07-18 14:23:50.734 - INFO - Mensagem recebida: [R] Request 1|19196|00; Origem: 19196
+2023-07-18 14:23:50.735 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 2056
+2023-07-18 14:23:50.747 - INFO - Mensagem recebida: [R] Release 3|2056|000; Origem: 2056
+2023-07-18 14:23:50.747 - INFO - Mensagem recebida: [R] Request 1|21604|00; Origem: 21604
+2023-07-18 14:23:50.747 - INFO - Mensagem recebida: [R] Request 1|2056|000; Origem: 2056
+2023-07-18 14:23:50.747 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19196
+2023-07-18 14:23:50.843 - INFO - Mensagem recebida: [R] Release 3|19196|00; Origem: 19196
+2023-07-18 14:23:50.844 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 21604
+2023-07-18 14:23:50.905 - INFO - Mensagem recebida: [R] Request 1|19196|00; Origem: 19196
+2023-07-18 14:23:51.077 - INFO - Mensagem recebida: [R] Release 3|21604|00; Origem: 21604
+2023-07-18 14:23:51.077 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 2056
+2023-07-18 14:23:51.093 - INFO - Mensagem recebida: [R] Release 3|2056|000; Origem: 2056
+2023-07-18 14:23:51.093 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19196
+2023-07-18 14:23:51.125 - INFO - Mensagem recebida: [R] Request 1|16016|00; Origem: 16016
+2023-07-18 14:23:51.204 - INFO - Mensagem recebida: [R] Request 1|19976|00; Origem: 19976
+2023-07-18 14:23:51.267 - INFO - Mensagem recebida: [R] Release 3|19196|00; Origem: 19196
+2023-07-18 14:23:51.267 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 16016
+2023-07-18 14:23:51.389 - INFO - Mensagem recebida: [R] Request 1|20924|00; Origem: 20924
+2023-07-18 14:23:51.456 - INFO - Mensagem recebida: [R] Release 3|16016|00; Origem: 16016
+2023-07-18 14:23:51.457 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19976
+2023-07-18 14:23:51.503 - INFO - Mensagem recebida: [R] Request 1|16016|00; Origem: 16016
+2023-07-18 14:23:51.566 - INFO - Mensagem recebida: [R] Release 3|19976|00; Origem: 19976
+2023-07-18 14:23:51.566 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20924
+2023-07-18 14:23:51.582 - INFO - Mensagem recebida: [R] Release 3|20924|00; Origem: 20924
+2023-07-18 14:23:51.582 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 16016
+2023-07-18 14:23:51.629 - INFO - Mensagem recebida: [R] Request 1|20924|00; Origem: 20924
+2023-07-18 14:23:51.693 - INFO - Mensagem recebida: [R] Request 1|15488|00; Origem: 15488
+2023-07-18 14:23:51.693 - INFO - Mensagem recebida: [R] Request 1|19976|00; Origem: 19976
+2023-07-18 14:23:51.818 - INFO - Mensagem recebida: [R] Release 3|16016|00; Origem: 16016
+2023-07-18 14:23:51.819 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20924
+2023-07-18 14:23:51.929 - INFO - Mensagem recebida: [R] Request 1|16016|00; Origem: 16016
+2023-07-18 14:23:52.040 - INFO - Mensagem recebida: [R] Request 1|18456|00; Origem: 18456
+2023-07-18 14:23:52.246 - INFO - Mensagem recebida: [R] Request 1|18744|00; Origem: 18744
+2023-07-18 14:23:52.247 - INFO - Mensagem recebida: [R] Release 3|20924|00; Origem: 20924
+2023-07-18 14:23:52.247 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 15488
+2023-07-18 14:23:52.309 - INFO - Mensagem recebida: [R] Request 1|20924|00; Origem: 20924
+2023-07-18 14:23:52.656 - INFO - Mensagem recebida: [R] Request 1|22052|00; Origem: 22052
+2023-07-18 14:23:52.767 - INFO - Mensagem recebida: [R] Release 3|15488|00; Origem: 15488
+2023-07-18 14:23:52.767 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19976
+2023-07-18 14:23:52.813 - INFO - Mensagem recebida: [R] Request 1|15488|00; Origem: 15488
+2023-07-18 14:23:52.908 - INFO - Mensagem recebida: [R] Release 3|19976|00; Origem: 19976
+2023-07-18 14:23:52.908 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 16016
+2023-07-18 14:23:52.924 - INFO - Mensagem recebida: [R] Release 3|16016|00; Origem: 16016
+2023-07-18 14:23:52.924 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 18456
+2023-07-18 14:23:52.940 - INFO - Mensagem recebida: [R] Release 3|18456|00; Origem: 18456
+2023-07-18 14:23:52.941 - INFO - Mensagem recebida: [R] Request 1|18456|00; Origem: 18456
+2023-07-18 14:23:52.941 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 18744
+2023-07-18 14:23:52.956 - INFO - Mensagem recebida: [R] Release 3|18744|00; Origem: 18744
+2023-07-18 14:23:52.956 - INFO - Mensagem recebida: [R] Request 1|18744|00; Origem: 18744
+2023-07-18 14:23:52.958 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20924
+2023-07-18 14:23:52.972 - INFO - Mensagem recebida: [R] Release 3|20924|00; Origem: 20924
+2023-07-18 14:23:52.972 - INFO - Mensagem recebida: [R] Request 1|19976|00; Origem: 19976
+2023-07-18 14:23:52.972 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22052
+2023-07-18 14:23:53.052 - INFO - Mensagem recebida: [R] Release 3|22052|00; Origem: 22052
+2023-07-18 14:23:53.052 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 15488
+2023-07-18 14:23:53.098 - INFO - Mensagem recebida: [R] Release 3|15488|00; Origem: 15488
+2023-07-18 14:23:53.098 - INFO - Mensagem recebida: [R] Request 1|22688|00; Origem: 22688
+2023-07-18 14:23:53.098 - INFO - Mensagem recebida: [R] Request 1|19356|00; Origem: 19356
+2023-07-18 14:23:53.099 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 18456
+2023-07-18 14:23:53.146 - INFO - Mensagem recebida: [R] Request 1|22052|00; Origem: 22052
+2023-07-18 14:23:53.178 - INFO - Mensagem recebida: [R] Request 1|15488|00; Origem: 15488
+2023-07-18 14:23:53.258 - INFO - Mensagem recebida: [R] Release 3|18456|00; Origem: 18456
+2023-07-18 14:23:53.258 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 18744
+2023-07-18 14:23:53.274 - INFO - Mensagem recebida: [R] Release 3|18744|00; Origem: 18744
+2023-07-18 14:23:53.274 - INFO - Mensagem recebida: [R] Request 1|18744|00; Origem: 18744
+2023-07-18 14:23:53.274 - INFO - Mensagem recebida: [R] Request 1|19460|00; Origem: 19460
+2023-07-18 14:23:53.275 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19976
+2023-07-18 14:23:53.290 - INFO - Mensagem recebida: [R] Release 3|19976|00; Origem: 19976
+2023-07-18 14:23:53.290 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22688
+2023-07-18 14:23:53.306 - INFO - Mensagem recebida: [R] Release 3|22688|00; Origem: 22688
+2023-07-18 14:23:53.306 - INFO - Mensagem recebida: [R] Request 1|18456|00; Origem: 18456
+2023-07-18 14:23:53.306 - INFO - Mensagem recebida: [R] Request 1|22688|00; Origem: 22688
+2023-07-18 14:23:53.307 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19356
+2023-07-18 14:23:53.369 - INFO - Mensagem recebida: [R] Release 3|19356|00; Origem: 19356
+2023-07-18 14:23:53.369 - INFO - Mensagem recebida: [R] Request 1|3800|000; Origem: 3800
+2023-07-18 14:23:53.370 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22052
+2023-07-18 14:23:53.385 - INFO - Mensagem recebida: [R] Release 3|22052|00; Origem: 22052
+2023-07-18 14:23:53.385 - INFO - Mensagem recebida: [R] Request 1|22052|00; Origem: 22052
+2023-07-18 14:23:53.386 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 15488
+2023-07-18 14:23:53.401 - INFO - Mensagem recebida: [R] Request 1|19356|00; Origem: 19356
+2023-07-18 14:23:53.432 - INFO - Mensagem recebida: [R] Release 3|15488|00; Origem: 15488
+2023-07-18 14:23:53.432 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 18744
+2023-07-18 14:23:53.448 - INFO - Mensagem recebida: [R] Release 3|18744|00; Origem: 18744
+2023-07-18 14:23:53.448 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19460
+2023-07-18 14:23:53.512 - INFO - Mensagem recebida: [R] Release 3|19460|00; Origem: 19460
+2023-07-18 14:23:53.512 - INFO - Mensagem recebida: [R] Request 1|19460|00; Origem: 19460
+2023-07-18 14:23:53.513 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 18456
+2023-07-18 14:23:53.566 - INFO - Mensagem recebida: [R] Request 1|1396|000; Origem: 1396
+2023-07-18 14:23:53.684 - INFO - Mensagem recebida: [R] Release 3|18456|00; Origem: 18456
+2023-07-18 14:23:53.684 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22688
+2023-07-18 14:23:53.715 - INFO - Mensagem recebida: [R] Request 1|22900|00; Origem: 22900
+2023-07-18 14:23:53.762 - INFO - Mensagem recebida: [R] Release 3|22688|00; Origem: 22688
+2023-07-18 14:23:53.762 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 3800
+2023-07-18 14:23:53.777 - INFO - Mensagem recebida: [R] Request 1|22688|00; Origem: 22688
+2023-07-18 14:23:53.839 - INFO - Mensagem recebida: [R] Release 3|3800|000; Origem: 3800
+2023-07-18 14:23:53.840 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22052
+2023-07-18 14:23:53.870 - INFO - Mensagem recebida: [R] Request 1|6488|000; Origem: 6488
+2023-07-18 14:23:53.918 - INFO - Mensagem recebida: [R] Release 3|22052|00; Origem: 22052
+2023-07-18 14:23:53.918 - INFO - Mensagem recebida: [R] Request 1|3800|000; Origem: 3800
+2023-07-18 14:23:53.918 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19356
+2023-07-18 14:23:53.934 - INFO - Mensagem recebida: [R] Release 3|19356|00; Origem: 19356
+2023-07-18 14:23:53.934 - INFO - Mensagem recebida: [R] Request 1|19356|00; Origem: 19356
+2023-07-18 14:23:53.934 - INFO - Mensagem recebida: [R] Request 1|22460|00; Origem: 22460
+2023-07-18 14:23:53.934 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19460
+2023-07-18 14:23:53.965 - INFO - Mensagem recebida: [R] Release 3|19460|00; Origem: 19460
+2023-07-18 14:23:53.965 - INFO - Mensagem recebida: [R] Request 1|19460|00; Origem: 19460
+2023-07-18 14:23:53.965 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 1396
+2023-07-18 14:23:53.981 - INFO - Mensagem recebida: [R] Release 3|1396|000; Origem: 1396
+2023-07-18 14:23:53.981 - INFO - Mensagem recebida: [R] Request 1|1396|000; Origem: 1396
+2023-07-18 14:23:53.981 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22900
+2023-07-18 14:23:54.028 - INFO - Mensagem recebida: [R] Request 1|18756|00; Origem: 18756
+2023-07-18 14:23:54.028 - INFO - Mensagem recebida: [R] Release 3|22900|00; Origem: 22900
+2023-07-18 14:23:54.029 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22688
+2023-07-18 14:23:54.029 - INFO - Mensagem recebida: [R] Request 1|22900|00; Origem: 22900
+2023-07-18 14:23:54.044 - INFO - Mensagem recebida: [R] Release 3|22688|00; Origem: 22688
+2023-07-18 14:23:54.044 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 6488
+2023-07-18 14:23:54.060 - INFO - Mensagem recebida: [R] Release 3|6488|000; Origem: 6488
+2023-07-18 14:23:54.060 - INFO - Mensagem recebida: [R] Request 1|6488|000; Origem: 6488
+2023-07-18 14:23:54.060 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 3800
+2023-07-18 14:23:54.075 - INFO - Mensagem recebida: [R] Release 3|3800|000; Origem: 3800
+2023-07-18 14:23:54.075 - INFO - Mensagem recebida: [R] Request 1|3800|000; Origem: 3800
+2023-07-18 14:23:54.075 - INFO - Mensagem recebida: [R] Request 1|5204|000; Origem: 5204
+2023-07-18 14:23:54.076 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19356
+2023-07-18 14:23:54.090 - INFO - Mensagem recebida: [R] Release 3|19356|00; Origem: 19356
+2023-07-18 14:23:54.091 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22460
+2023-07-18 14:23:54.107 - INFO - Mensagem recebida: [R] Release 3|22460|00; Origem: 22460
+2023-07-18 14:23:54.107 - INFO - Mensagem recebida: [R] Request 1|22460|00; Origem: 22460
+2023-07-18 14:23:54.108 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19460
+2023-07-18 14:23:54.121 - INFO - Mensagem recebida: [R] Release 3|19460|00; Origem: 19460
+2023-07-18 14:23:54.122 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 1396
+2023-07-18 14:23:54.137 - INFO - Mensagem recebida: [R] Release 3|1396|000; Origem: 1396
+2023-07-18 14:23:54.137 - INFO - Mensagem recebida: [R] Request 1|1396|000; Origem: 1396
+2023-07-18 14:23:54.138 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 18756
+2023-07-18 14:23:54.152 - INFO - Mensagem recebida: [R] Request 1|20408|00; Origem: 20408
+2023-07-18 14:23:54.152 - INFO - Mensagem recebida: [R] Release 3|18756|00; Origem: 18756
+2023-07-18 14:23:54.152 - INFO - Mensagem recebida: [R] Request 1|18756|00; Origem: 18756
+2023-07-18 14:23:54.153 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22900
+2023-07-18 14:23:54.168 - INFO - Mensagem recebida: [R] Release 3|22900|00; Origem: 22900
+2023-07-18 14:23:54.168 - INFO - Mensagem recebida: [R] Request 1|22900|00; Origem: 22900
+2023-07-18 14:23:54.168 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 6488
+2023-07-18 14:23:54.184 - INFO - Mensagem recebida: [R] Release 3|6488|000; Origem: 6488
+2023-07-18 14:23:54.184 - INFO - Mensagem recebida: [R] Request 1|6488|000; Origem: 6488
+2023-07-18 14:23:54.184 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 3800
+2023-07-18 14:23:54.199 - INFO - Mensagem recebida: [R] Release 3|3800|000; Origem: 3800
+2023-07-18 14:23:54.199 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 5204
+2023-07-18 14:23:54.275 - INFO - Mensagem recebida: [R] Release 3|5204|000; Origem: 5204
+2023-07-18 14:23:54.275 - INFO - Mensagem recebida: [R] Request 1|5204|000; Origem: 5204
+2023-07-18 14:23:54.275 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22460
+2023-07-18 14:23:54.294 - INFO - Mensagem recebida: [R] Release 3|22460|00; Origem: 22460
+2023-07-18 14:23:54.294 - INFO - Mensagem recebida: [R] Request 1|22460|00; Origem: 22460
+2023-07-18 14:23:54.295 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 1396
+2023-07-18 14:23:54.307 - INFO - Mensagem recebida: [R] Release 3|1396|000; Origem: 1396
+2023-07-18 14:23:54.308 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20408
+2023-07-18 14:23:54.321 - INFO - Mensagem recebida: [R] Release 3|20408|00; Origem: 20408
+2023-07-18 14:23:54.322 - INFO - Mensagem recebida: [R] Request 1|20408|00; Origem: 20408
+2023-07-18 14:23:54.322 - INFO - Mensagem recebida: [R] Request 1|21656|00; Origem: 21656
+2023-07-18 14:23:54.322 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 18756
+2023-07-18 14:23:54.337 - INFO - Mensagem recebida: [R] Release 3|18756|00; Origem: 18756
+2023-07-18 14:23:54.337 - INFO - Mensagem recebida: [R] Request 1|18756|00; Origem: 18756
+2023-07-18 14:23:54.337 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22900
+2023-07-18 14:23:54.353 - INFO - Mensagem recebida: [R] Release 3|22900|00; Origem: 22900
+2023-07-18 14:23:54.353 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 6488
+2023-07-18 14:23:54.369 - INFO - Mensagem recebida: [R] Release 3|6488|000; Origem: 6488
+2023-07-18 14:23:54.369 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 5204
+2023-07-18 14:23:54.385 - INFO - Mensagem recebida: [R] Release 3|5204|000; Origem: 5204
+2023-07-18 14:23:54.385 - INFO - Mensagem recebida: [R] Request 1|5204|000; Origem: 5204
+2023-07-18 14:23:54.385 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22460
+2023-07-18 14:23:54.401 - INFO - Mensagem recebida: [R] Release 3|22460|00; Origem: 22460
+2023-07-18 14:23:54.401 - INFO - Mensagem recebida: [R] Request 1|17504|00; Origem: 17504
+2023-07-18 14:23:54.401 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20408
+2023-07-18 14:23:54.417 - INFO - Mensagem recebida: [R] Release 3|20408|00; Origem: 20408
+2023-07-18 14:23:54.417 - INFO - Mensagem recebida: [R] Request 1|20408|00; Origem: 20408
+2023-07-18 14:23:54.417 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 21656
+2023-07-18 14:23:54.433 - INFO - Mensagem recebida: [R] Release 3|21656|00; Origem: 21656
+2023-07-18 14:23:54.433 - INFO - Mensagem recebida: [R] Request 1|21656|00; Origem: 21656
+2023-07-18 14:23:54.433 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 18756
+2023-07-18 14:23:54.449 - INFO - Mensagem recebida: [R] Release 3|18756|00; Origem: 18756
+2023-07-18 14:23:54.449 - INFO - Mensagem recebida: [R] Request 1|11156|00; Origem: 11156
+2023-07-18 14:23:54.450 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 5204
+2023-07-18 14:23:54.464 - INFO - Mensagem recebida: [R] Release 3|5204|000; Origem: 5204
+2023-07-18 14:23:54.464 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 17504
+2023-07-18 14:23:54.480 - INFO - Mensagem recebida: [R] Release 3|17504|00; Origem: 17504
+2023-07-18 14:23:54.480 - INFO - Mensagem recebida: [R] Request 1|17504|00; Origem: 17504
+2023-07-18 14:23:54.480 - INFO - Mensagem recebida: [R] Request 1|19896|00; Origem: 19896
+2023-07-18 14:23:54.480 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20408
+2023-07-18 14:23:54.496 - INFO - Mensagem recebida: [R] Release 3|20408|00; Origem: 20408
+2023-07-18 14:23:54.496 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 21656
+2023-07-18 14:23:54.512 - INFO - Mensagem recebida: [R] Release 3|21656|00; Origem: 21656
+2023-07-18 14:23:54.512 - INFO - Mensagem recebida: [R] Request 1|21656|00; Origem: 21656
+2023-07-18 14:23:54.512 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 11156
+2023-07-18 14:23:54.528 - INFO - Mensagem recebida: [R] Release 3|11156|00; Origem: 11156
+2023-07-18 14:23:54.528 - INFO - Mensagem recebida: [R] Request 1|11156|00; Origem: 11156
+2023-07-18 14:23:54.528 - INFO - Mensagem recebida: [R] Request 1|20816|00; Origem: 20816
+2023-07-18 14:23:54.528 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 17504
+2023-07-18 14:23:54.543 - INFO - Mensagem recebida: [R] Release 3|17504|00; Origem: 17504
+2023-07-18 14:23:54.543 - INFO - Mensagem recebida: [R] Request 1|17504|00; Origem: 17504
+2023-07-18 14:23:54.543 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19896
+2023-07-18 14:23:54.559 - INFO - Mensagem recebida: [R] Release 3|19896|00; Origem: 19896
+2023-07-18 14:23:54.559 - INFO - Mensagem recebida: [R] Request 1|19896|00; Origem: 19896
+2023-07-18 14:23:54.559 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 21656
+2023-07-18 14:23:54.574 - INFO - Mensagem recebida: [R] Release 3|21656|00; Origem: 21656
+2023-07-18 14:23:54.574 - INFO - Mensagem recebida: [R] Request 1|3284|000; Origem: 3284
+2023-07-18 14:23:54.574 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 11156
+2023-07-18 14:23:54.605 - INFO - Mensagem recebida: [R] Release 3|11156|00; Origem: 11156
+2023-07-18 14:23:54.606 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20816
+2023-07-18 14:23:54.651 - INFO - Mensagem recebida: [R] Request 1|11156|00; Origem: 11156
+2023-07-18 14:23:54.652 - INFO - Mensagem recebida: [R] Release 3|20816|00; Origem: 20816
+2023-07-18 14:23:54.652 - INFO - Mensagem recebida: [R] Request 1|20816|00; Origem: 20816
+2023-07-18 14:23:54.653 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 17504
+2023-07-18 14:23:54.669 - INFO - Mensagem recebida: [R] Release 3|17504|00; Origem: 17504
+2023-07-18 14:23:54.669 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19896
+2023-07-18 14:23:54.696 - INFO - Mensagem recebida: [R] Release 3|19896|00; Origem: 19896
+2023-07-18 14:23:54.696 - INFO - Mensagem recebida: [R] Request 1|19896|00; Origem: 19896
+2023-07-18 14:23:54.696 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 3284
+2023-07-18 14:23:54.717 - INFO - Mensagem recebida: [R] Release 3|3284|000; Origem: 3284
+2023-07-18 14:23:54.717 - INFO - Mensagem recebida: [R] Request 1|3284|000; Origem: 3284
+2023-07-18 14:23:54.717 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 11156
+2023-07-18 14:23:54.733 - INFO - Mensagem recebida: [R] Release 3|11156|00; Origem: 11156
+2023-07-18 14:23:54.733 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20816
+2023-07-18 14:23:54.748 - INFO - Mensagem recebida: [R] Release 3|20816|00; Origem: 20816
+2023-07-18 14:23:54.748 - INFO - Mensagem recebida: [R] Request 1|20816|00; Origem: 20816
+2023-07-18 14:23:54.748 - INFO - Mensagem recebida: [R] Request 1|23120|00; Origem: 23120
+2023-07-18 14:23:54.748 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19896
+2023-07-18 14:23:54.810 - INFO - Mensagem recebida: [R] Release 3|19896|00; Origem: 19896
+2023-07-18 14:23:54.810 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 3284
+2023-07-18 14:23:54.826 - INFO - Mensagem recebida: [R] Release 3|3284|000; Origem: 3284
+2023-07-18 14:23:54.826 - INFO - Mensagem recebida: [R] Request 1|3284|000; Origem: 3284
+2023-07-18 14:23:54.826 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20816
+2023-07-18 14:23:54.842 - INFO - Mensagem recebida: [R] Release 3|20816|00; Origem: 20816
+2023-07-18 14:23:54.842 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 23120
+2023-07-18 14:23:54.857 - INFO - Mensagem recebida: [R] Release 3|23120|00; Origem: 23120
+2023-07-18 14:23:54.857 - INFO - Mensagem recebida: [R] Request 1|23120|00; Origem: 23120
+2023-07-18 14:23:54.857 - INFO - Mensagem recebida: [R] Request 1|12668|00; Origem: 12668
+2023-07-18 14:23:54.857 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 3284
+2023-07-18 14:23:54.872 - INFO - Mensagem recebida: [R] Release 3|3284|000; Origem: 3284
+2023-07-18 14:23:54.872 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 23120
+2023-07-18 14:23:54.889 - INFO - Mensagem recebida: [R] Release 3|23120|00; Origem: 23120
+2023-07-18 14:23:54.889 - INFO - Mensagem recebida: [R] Request 1|23120|00; Origem: 23120
+2023-07-18 14:23:54.890 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 12668
+2023-07-18 14:23:54.903 - INFO - Mensagem recebida: [R] Release 3|12668|00; Origem: 12668
+2023-07-18 14:23:54.903 - INFO - Mensagem recebida: [R] Request 1|12668|00; Origem: 12668
+2023-07-18 14:23:54.903 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 23120
+2023-07-18 14:23:54.919 - INFO - Mensagem recebida: [R] Release 3|23120|00; Origem: 23120
+2023-07-18 14:23:54.919 - INFO - Mensagem recebida: [R] Request 1|16204|00; Origem: 16204
+2023-07-18 14:23:54.919 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 12668
+2023-07-18 14:23:54.934 - INFO - Mensagem recebida: [R] Release 3|12668|00; Origem: 12668
+2023-07-18 14:23:54.934 - INFO - Mensagem recebida: [R] Request 1|12668|00; Origem: 12668
+2023-07-18 14:23:54.934 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 16204
+2023-07-18 14:23:54.949 - INFO - Mensagem recebida: [R] Release 3|16204|00; Origem: 16204
+2023-07-18 14:23:54.949 - INFO - Mensagem recebida: [R] Request 1|16204|00; Origem: 16204
+2023-07-18 14:23:54.949 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 12668
+2023-07-18 14:23:54.965 - INFO - Mensagem recebida: [R] Release 3|12668|00; Origem: 12668
+2023-07-18 14:23:54.965 - INFO - Mensagem recebida: [R] Request 1|20268|00; Origem: 20268
+2023-07-18 14:23:54.965 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 16204
+2023-07-18 14:23:54.981 - INFO - Mensagem recebida: [R] Release 3|16204|00; Origem: 16204
+2023-07-18 14:23:54.981 - INFO - Mensagem recebida: [R] Request 1|16204|00; Origem: 16204
+2023-07-18 14:23:54.981 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20268
+2023-07-18 14:23:54.997 - INFO - Mensagem recebida: [R] Release 3|20268|00; Origem: 20268
+2023-07-18 14:23:54.997 - INFO - Mensagem recebida: [R] Request 1|20268|00; Origem: 20268
+2023-07-18 14:23:54.997 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 16204
+2023-07-18 14:23:55.013 - INFO - Mensagem recebida: [R] Release 3|16204|00; Origem: 16204
+2023-07-18 14:23:55.013 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20268
+2023-07-18 14:23:55.029 - INFO - Mensagem recebida: [R] Release 3|20268|00; Origem: 20268
+2023-07-18 14:23:55.029 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.029 - INFO - Mensagem recebida: [R] Request 1|20268|00; Origem: 20268
+2023-07-18 14:23:55.029 - INFO - Mensagem recebida: [R] Request 1|23232|00; Origem: 23232
+2023-07-18 14:23:55.029 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20268
+2023-07-18 14:23:55.045 - INFO - Mensagem recebida: [R] Release 3|20268|00; Origem: 20268
+2023-07-18 14:23:55.045 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 23232
+2023-07-18 14:23:55.062 - INFO - Mensagem recebida: [R] Release 3|23232|00; Origem: 23232
+2023-07-18 14:23:55.062 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.062 - INFO - Mensagem recebida: [R] Request 1|23232|00; Origem: 23232
+2023-07-18 14:23:55.063 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 23232
+2023-07-18 14:23:55.076 - INFO - Mensagem recebida: [R] Release 3|23232|00; Origem: 23232
+2023-07-18 14:23:55.076 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.076 - INFO - Mensagem recebida: [R] Request 1|23232|00; Origem: 23232
+2023-07-18 14:23:55.076 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 23232
+2023-07-18 14:23:55.092 - INFO - Mensagem recebida: [R] Release 3|23232|00; Origem: 23232
+2023-07-18 14:23:55.092 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.187 - INFO - Mensagem recebida: [R] Request 1|4812|000; Origem: 4812
+2023-07-18 14:23:55.188 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 4812
+2023-07-18 14:23:55.203 - INFO - Mensagem recebida: [R] Release 3|4812|000; Origem: 4812
+2023-07-18 14:23:55.203 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.203 - INFO - Mensagem recebida: [R] Request 1|4812|000; Origem: 4812
+2023-07-18 14:23:55.204 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 4812
+2023-07-18 14:23:55.218 - INFO - Mensagem recebida: [R] Release 3|4812|000; Origem: 4812
+2023-07-18 14:23:55.218 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.218 - INFO - Mensagem recebida: [R] Request 1|4812|000; Origem: 4812
+2023-07-18 14:23:55.219 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 4812
+2023-07-18 14:23:55.234 - INFO - Mensagem recebida: [R] Release 3|4812|000; Origem: 4812
+2023-07-18 14:23:55.234 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.328 - INFO - Mensagem recebida: [R] Request 1|22792|00; Origem: 22792
+2023-07-18 14:23:55.329 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22792
+2023-07-18 14:23:55.343 - INFO - Mensagem recebida: [R] Release 3|22792|00; Origem: 22792
+2023-07-18 14:23:55.343 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.343 - INFO - Mensagem recebida: [R] Request 1|22792|00; Origem: 22792
+2023-07-18 14:23:55.344 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22792
+2023-07-18 14:23:55.358 - INFO - Mensagem recebida: [R] Release 3|22792|00; Origem: 22792
+2023-07-18 14:23:55.358 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.358 - INFO - Mensagem recebida: [R] Request 1|22792|00; Origem: 22792
+2023-07-18 14:23:55.358 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22792
+2023-07-18 14:23:55.373 - INFO - Mensagem recebida: [R] Release 3|22792|00; Origem: 22792
+2023-07-18 14:23:55.373 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.373 - INFO - Mensagem recebida: [R] Request 1|4048|000; Origem: 4048
+2023-07-18 14:23:55.374 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 4048
+2023-07-18 14:23:55.389 - INFO - Mensagem recebida: [R] Release 3|4048|000; Origem: 4048
+2023-07-18 14:23:55.389 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.389 - INFO - Mensagem recebida: [R] Request 1|4048|000; Origem: 4048
+2023-07-18 14:23:55.390 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 4048
+2023-07-18 14:23:55.405 - INFO - Mensagem recebida: [R] Release 3|4048|000; Origem: 4048
+2023-07-18 14:23:55.405 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.405 - INFO - Mensagem recebida: [R] Request 1|4048|000; Origem: 4048
+2023-07-18 14:23:55.406 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 4048
+2023-07-18 14:23:55.421 - INFO - Mensagem recebida: [R] Release 3|4048|000; Origem: 4048
+2023-07-18 14:23:55.421 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.437 - INFO - Mensagem recebida: [R] Request 1|4440|000; Origem: 4440
+2023-07-18 14:23:55.437 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 4440
+2023-07-18 14:23:55.453 - INFO - Mensagem recebida: [R] Release 3|4440|000; Origem: 4440
+2023-07-18 14:23:55.453 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.469 - INFO - Mensagem recebida: [R] Request 1|4440|000; Origem: 4440
+2023-07-18 14:23:55.470 - INFO - Mensagem recebida: [R] Request 1|21316|00; Origem: 21316
+2023-07-18 14:23:55.470 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 4440
+2023-07-18 14:23:55.484 - INFO - Mensagem recebida: [R] Release 3|4440|000; Origem: 4440
+2023-07-18 14:23:55.484 - INFO - Mensagem recebida: [R] Request 1|4440|000; Origem: 4440
+2023-07-18 14:23:55.484 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 21316
+2023-07-18 14:23:55.499 - INFO - Mensagem recebida: [R] Release 3|21316|00; Origem: 21316
+2023-07-18 14:23:55.499 - INFO - Mensagem recebida: [R] Request 1|21316|00; Origem: 21316
+2023-07-18 14:23:55.499 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 4440
+2023-07-18 14:23:55.514 - INFO - Mensagem recebida: [R] Release 3|4440|000; Origem: 4440
+2023-07-18 14:23:55.515 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 21316
+2023-07-18 14:23:55.530 - INFO - Mensagem recebida: [R] Request 1|1584|000; Origem: 1584
+2023-07-18 14:23:55.545 - INFO - Mensagem recebida: [R] Release 3|21316|00; Origem: 21316
+2023-07-18 14:23:55.545 - INFO - Mensagem recebida: [R] Request 1|21316|00; Origem: 21316
+2023-07-18 14:23:55.545 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 1584
+2023-07-18 14:23:55.560 - INFO - Mensagem recebida: [R] Release 3|1584|000; Origem: 1584
+2023-07-18 14:23:55.560 - INFO - Mensagem recebida: [R] Request 1|1584|000; Origem: 1584
+2023-07-18 14:23:55.560 - INFO - Mensagem recebida: [R] Request 1|20252|00; Origem: 20252
+2023-07-18 14:23:55.561 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 21316
+2023-07-18 14:23:55.575 - INFO - Mensagem recebida: [R] Release 3|21316|00; Origem: 21316
+2023-07-18 14:23:55.576 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 1584
+2023-07-18 14:23:55.609 - INFO - Mensagem recebida: [R] Release 3|1584|000; Origem: 1584
+2023-07-18 14:23:55.609 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20252
+2023-07-18 14:23:55.671 - INFO - Mensagem recebida: [R] Request 1|1584|000; Origem: 1584
+2023-07-18 14:23:55.703 - INFO - Mensagem recebida: [R] Release 3|20252|00; Origem: 20252
+2023-07-18 14:23:55.703 - INFO - Mensagem recebida: [R] Request 1|6300|000; Origem: 6300
+2023-07-18 14:23:55.703 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 1584
+2023-07-18 14:23:55.751 - INFO - Mensagem recebida: [R] Request 1|20252|00; Origem: 20252
+2023-07-18 14:23:55.797 - INFO - Mensagem recebida: [R] Release 3|1584|000; Origem: 1584
+2023-07-18 14:23:55.797 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 6300
+2023-07-18 14:23:55.813 - INFO - Mensagem recebida: [R] Release 3|6300|000; Origem: 6300
+2023-07-18 14:23:55.813 - INFO - Mensagem recebida: [R] Request 1|6300|000; Origem: 6300
+2023-07-18 14:23:55.813 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20252
+2023-07-18 14:23:55.829 - INFO - Mensagem recebida: [R] Release 3|20252|00; Origem: 20252
+2023-07-18 14:23:55.829 - INFO - Mensagem recebida: [R] Request 1|20252|00; Origem: 20252
+2023-07-18 14:23:55.830 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 6300
+2023-07-18 14:23:55.845 - INFO - Mensagem recebida: [R] Release 3|6300|000; Origem: 6300
+2023-07-18 14:23:55.846 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20252
+2023-07-18 14:23:55.861 - INFO - Mensagem recebida: [R] Request 1|6300|000; Origem: 6300
+2023-07-18 14:23:55.876 - INFO - Mensagem recebida: [R] Release 3|20252|00; Origem: 20252
+2023-07-18 14:23:55.876 - INFO - Mensagem recebida: [R] Request 1|22716|00; Origem: 22716
+2023-07-18 14:23:55.877 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 6300
+2023-07-18 14:23:55.892 - INFO - Mensagem recebida: [R] Release 3|6300|000; Origem: 6300
+2023-07-18 14:23:55.892 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22716
+2023-07-18 14:23:55.907 - INFO - Mensagem recebida: [R] Release 3|22716|00; Origem: 22716
+2023-07-18 14:23:55.907 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.907 - INFO - Mensagem recebida: [R] Request 1|22716|00; Origem: 22716
+2023-07-18 14:23:55.907 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22716
+2023-07-18 14:23:55.923 - INFO - Mensagem recebida: [R] Release 3|22716|00; Origem: 22716
+2023-07-18 14:23:55.923 - INFO - Mensagem recebida: [R] Request 1|22716|00; Origem: 22716
+2023-07-18 14:23:55.923 - INFO - Mensagem recebida: [R] Request 1|11464|00; Origem: 11464
+2023-07-18 14:23:55.924 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.924 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22716
+2023-07-18 14:23:55.939 - INFO - Mensagem recebida: [R] Release 3|22716|00; Origem: 22716
+2023-07-18 14:23:55.939 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 11464
+2023-07-18 14:23:55.955 - INFO - Mensagem recebida: [R] Release 3|11464|00; Origem: 11464
+2023-07-18 14:23:55.955 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:55.955 - INFO - Mensagem recebida: [R] Request 1|11464|00; Origem: 11464
+2023-07-18 14:23:55.955 - INFO - Mensagem recebida: [R] Request 1|10584|00; Origem: 10584
+2023-07-18 14:23:55.955 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 11464
+2023-07-18 14:23:55.971 - INFO - Mensagem recebida: [R] Release 3|11464|00; Origem: 11464
+2023-07-18 14:23:55.971 - INFO - Mensagem recebida: [R] Request 1|11464|00; Origem: 11464
+2023-07-18 14:23:55.972 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 10584
+2023-07-18 14:23:55.987 - INFO - Mensagem recebida: [R] Release 3|10584|00; Origem: 10584
+2023-07-18 14:23:55.987 - INFO - Mensagem recebida: [R] Request 1|10584|00; Origem: 10584
+2023-07-18 14:23:55.987 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 11464
+2023-07-18 14:23:56.002 - INFO - Mensagem recebida: [R] Release 3|11464|00; Origem: 11464
+2023-07-18 14:23:56.002 - INFO - Mensagem recebida: [R] Request 1|3356|000; Origem: 3356
+2023-07-18 14:23:56.002 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 10584
+2023-07-18 14:23:56.018 - INFO - Mensagem recebida: [R] Release 3|10584|00; Origem: 10584
+2023-07-18 14:23:56.018 - INFO - Mensagem recebida: [R] Request 1|10584|00; Origem: 10584
+2023-07-18 14:23:56.018 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 3356
+2023-07-18 14:23:56.033 - INFO - Mensagem recebida: [R] Release 3|3356|000; Origem: 3356
+2023-07-18 14:23:56.033 - INFO - Mensagem recebida: [R] Request 1|3356|000; Origem: 3356
+2023-07-18 14:23:56.033 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 10584
+2023-07-18 14:23:56.049 - INFO - Mensagem recebida: [R] Release 3|10584|00; Origem: 10584
+2023-07-18 14:23:56.049 - INFO - Mensagem recebida: [R] Request 1|1640|000; Origem: 1640
+2023-07-18 14:23:56.049 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 3356
+2023-07-18 14:23:56.065 - INFO - Mensagem recebida: [R] Release 3|3356|000; Origem: 3356
+2023-07-18 14:23:56.065 - INFO - Mensagem recebida: [R] Request 1|3356|000; Origem: 3356
+2023-07-18 14:23:56.065 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 1640
+2023-07-18 14:23:56.080 - INFO - Mensagem recebida: [R] Release 3|1640|000; Origem: 1640
+2023-07-18 14:23:56.080 - INFO - Mensagem recebida: [R] Request 1|1640|000; Origem: 1640
+2023-07-18 14:23:56.080 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 3356
+2023-07-18 14:23:56.096 - INFO - Mensagem recebida: [R] Release 3|3356|000; Origem: 3356
+2023-07-18 14:23:56.096 - INFO - Mensagem recebida: [R] Request 1|14256|00; Origem: 14256
+2023-07-18 14:23:56.096 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 1640
+2023-07-18 14:23:56.112 - INFO - Mensagem recebida: [R] Release 3|1640|000; Origem: 1640
+2023-07-18 14:23:56.112 - INFO - Mensagem recebida: [R] Request 1|1640|000; Origem: 1640
+2023-07-18 14:23:56.113 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 14256
+2023-07-18 14:23:56.127 - INFO - Mensagem recebida: [R] Release 3|14256|00; Origem: 14256
+2023-07-18 14:23:56.128 - INFO - Mensagem recebida: [R] Request 1|14256|00; Origem: 14256
+2023-07-18 14:23:56.129 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 1640
+2023-07-18 14:23:56.157 - INFO - Mensagem recebida: [R] Release 3|1640|000; Origem: 1640
+2023-07-18 14:23:56.157 - INFO - Mensagem recebida: [R] Request 1|4796|000; Origem: 4796
+2023-07-18 14:23:56.157 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 14256
+2023-07-18 14:23:56.173 - INFO - Mensagem recebida: [R] Release 3|14256|00; Origem: 14256
+2023-07-18 14:23:56.173 - INFO - Mensagem recebida: [R] Request 1|14256|00; Origem: 14256
+2023-07-18 14:23:56.173 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 4796
+2023-07-18 14:23:56.188 - INFO - Mensagem recebida: [R] Release 3|4796|000; Origem: 4796
+2023-07-18 14:23:56.188 - INFO - Mensagem recebida: [R] Request 1|4796|000; Origem: 4796
+2023-07-18 14:23:56.189 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 14256
+2023-07-18 14:23:56.204 - INFO - Mensagem recebida: [R] Release 3|14256|00; Origem: 14256
+2023-07-18 14:23:56.205 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 4796
+2023-07-18 14:23:56.240 - INFO - Mensagem recebida: [R] Release 3|4796|000; Origem: 4796
+2023-07-18 14:23:56.240 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.265 - INFO - Mensagem recebida: [R] Request 1|4796|000; Origem: 4796
+2023-07-18 14:23:56.266 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 4796
+2023-07-18 14:23:56.281 - INFO - Mensagem recebida: [R] Release 3|4796|000; Origem: 4796
+2023-07-18 14:23:56.281 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.313 - INFO - Mensagem recebida: [R] Request 1|10940|00; Origem: 10940
+2023-07-18 14:23:56.313 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 10940
+2023-07-18 14:23:56.328 - INFO - Mensagem recebida: [R] Release 3|10940|00; Origem: 10940
+2023-07-18 14:23:56.328 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.328 - INFO - Mensagem recebida: [R] Request 1|10940|00; Origem: 10940
+2023-07-18 14:23:56.328 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 10940
+2023-07-18 14:23:56.343 - INFO - Mensagem recebida: [R] Release 3|10940|00; Origem: 10940
+2023-07-18 14:23:56.343 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.344 - INFO - Mensagem recebida: [R] Request 1|10940|00; Origem: 10940
+2023-07-18 14:23:56.344 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 10940
+2023-07-18 14:23:56.361 - INFO - Mensagem recebida: [R] Release 3|10940|00; Origem: 10940
+2023-07-18 14:23:56.361 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.438 - INFO - Mensagem recebida: [R] Request 1|12892|00; Origem: 12892
+2023-07-18 14:23:56.439 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 12892
+2023-07-18 14:23:56.454 - INFO - Mensagem recebida: [R] Release 3|12892|00; Origem: 12892
+2023-07-18 14:23:56.454 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.454 - INFO - Mensagem recebida: [R] Request 1|12892|00; Origem: 12892
+2023-07-18 14:23:56.454 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 12892
+2023-07-18 14:23:56.469 - INFO - Mensagem recebida: [R] Release 3|12892|00; Origem: 12892
+2023-07-18 14:23:56.469 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.469 - INFO - Mensagem recebida: [R] Request 1|12892|00; Origem: 12892
+2023-07-18 14:23:56.469 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 12892
+2023-07-18 14:23:56.485 - INFO - Mensagem recebida: [R] Release 3|12892|00; Origem: 12892
+2023-07-18 14:23:56.485 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.515 - INFO - Mensagem recebida: [R] Request 1|23008|00; Origem: 23008
+2023-07-18 14:23:56.515 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 23008
+2023-07-18 14:23:56.531 - INFO - Mensagem recebida: [R] Release 3|23008|00; Origem: 23008
+2023-07-18 14:23:56.531 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.531 - INFO - Mensagem recebida: [R] Request 1|23008|00; Origem: 23008
+2023-07-18 14:23:56.531 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 23008
+2023-07-18 14:23:56.547 - INFO - Mensagem recebida: [R] Release 3|23008|00; Origem: 23008
+2023-07-18 14:23:56.547 - INFO - Mensagem recebida: [R] Request 1|23008|00; Origem: 23008
+2023-07-18 14:23:56.547 - INFO - Mensagem recebida: [R] Request 1|4740|000; Origem: 4740
+2023-07-18 14:23:56.547 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.548 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 23008
+2023-07-18 14:23:56.563 - INFO - Mensagem recebida: [R] Release 3|23008|00; Origem: 23008
+2023-07-18 14:23:56.563 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 4740
+2023-07-18 14:23:56.578 - INFO - Mensagem recebida: [R] Release 3|4740|000; Origem: 4740
+2023-07-18 14:23:56.578 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.578 - INFO - Mensagem recebida: [R] Request 1|4740|000; Origem: 4740
+2023-07-18 14:23:56.579 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 4740
+2023-07-18 14:23:56.594 - INFO - Mensagem recebida: [R] Release 3|4740|000; Origem: 4740
+2023-07-18 14:23:56.594 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.594 - INFO - Mensagem recebida: [R] Request 1|4740|000; Origem: 4740
+2023-07-18 14:23:56.596 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 4740
+2023-07-18 14:23:56.610 - INFO - Mensagem recebida: [R] Release 3|4740|000; Origem: 4740
+2023-07-18 14:23:56.611 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.626 - INFO - Mensagem recebida: [R] Request 1|22248|00; Origem: 22248
+2023-07-18 14:23:56.626 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22248
+2023-07-18 14:23:56.642 - INFO - Mensagem recebida: [R] Release 3|22248|00; Origem: 22248
+2023-07-18 14:23:56.642 - INFO - Mensagem recebida: [R] Request 1|22248|00; Origem: 22248
+2023-07-18 14:23:56.642 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.643 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22248
+2023-07-18 14:23:56.658 - INFO - Mensagem recebida: [R] Release 3|22248|00; Origem: 22248
+2023-07-18 14:23:56.658 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.658 - INFO - Mensagem recebida: [R] Request 1|22248|00; Origem: 22248
+2023-07-18 14:23:56.659 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 22248
+2023-07-18 14:23:56.674 - INFO - Mensagem recebida: [R] Release 3|22248|00; Origem: 22248
+2023-07-18 14:23:56.674 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.738 - INFO - Mensagem recebida: [R] Request 1|6448|000; Origem: 6448
+2023-07-18 14:23:56.738 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 6448
+2023-07-18 14:23:56.754 - INFO - Mensagem recebida: [R] Release 3|6448|000; Origem: 6448
+2023-07-18 14:23:56.754 - INFO - Mensagem recebida: [R] Request 1|6448|000; Origem: 6448
+2023-07-18 14:23:56.754 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.755 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 6448
+2023-07-18 14:23:56.769 - INFO - Mensagem recebida: [R] Release 3|6448|000; Origem: 6448
+2023-07-18 14:23:56.769 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.769 - INFO - Mensagem recebida: [R] Request 1|6448|000; Origem: 6448
+2023-07-18 14:23:56.770 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 6448
+2023-07-18 14:23:56.785 - INFO - Mensagem recebida: [R] Release 3|6448|000; Origem: 6448
+2023-07-18 14:23:56.785 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.800 - INFO - Mensagem recebida: [R] Request 1|9068|000; Origem: 9068
+2023-07-18 14:23:56.800 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 9068
+2023-07-18 14:23:56.815 - INFO - Mensagem recebida: [R] Release 3|9068|000; Origem: 9068
+2023-07-18 14:23:56.815 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.815 - INFO - Mensagem recebida: [R] Request 1|9068|000; Origem: 9068
+2023-07-18 14:23:56.817 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 9068
+2023-07-18 14:23:56.831 - INFO - Mensagem recebida: [R] Release 3|9068|000; Origem: 9068
+2023-07-18 14:23:56.831 - INFO - Mensagem recebida: [R] Request 1|9068|000; Origem: 9068
+2023-07-18 14:23:56.831 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.832 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 9068
+2023-07-18 14:23:56.847 - INFO - Mensagem recebida: [R] Release 3|9068|000; Origem: 9068
+2023-07-18 14:23:56.847 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.863 - INFO - Mensagem recebida: [R] Request 1|16368|00; Origem: 16368
+2023-07-18 14:23:56.863 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 16368
+2023-07-18 14:23:56.879 - INFO - Mensagem recebida: [R] Release 3|16368|00; Origem: 16368
+2023-07-18 14:23:56.879 - INFO - Mensagem recebida: [R] Request 1|16368|00; Origem: 16368
+2023-07-18 14:23:56.879 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.880 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 16368
+2023-07-18 14:23:56.895 - INFO - Mensagem recebida: [R] Release 3|16368|00; Origem: 16368
+2023-07-18 14:23:56.895 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.895 - INFO - Mensagem recebida: [R] Request 1|16368|00; Origem: 16368
+2023-07-18 14:23:56.896 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 16368
+2023-07-18 14:23:56.911 - INFO - Mensagem recebida: [R] Release 3|16368|00; Origem: 16368
+2023-07-18 14:23:56.911 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.943 - INFO - Mensagem recebida: [R] Request 1|18352|00; Origem: 18352
+2023-07-18 14:23:56.944 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 18352
+2023-07-18 14:23:56.959 - INFO - Mensagem recebida: [R] Release 3|18352|00; Origem: 18352
+2023-07-18 14:23:56.959 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.959 - INFO - Mensagem recebida: [R] Request 1|18352|00; Origem: 18352
+2023-07-18 14:23:56.960 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 18352
+2023-07-18 14:23:56.975 - INFO - Mensagem recebida: [R] Release 3|18352|00; Origem: 18352
+2023-07-18 14:23:56.975 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:56.975 - INFO - Mensagem recebida: [R] Request 1|18352|00; Origem: 18352
+2023-07-18 14:23:56.976 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 18352
+2023-07-18 14:23:56.991 - INFO - Mensagem recebida: [R] Release 3|18352|00; Origem: 18352
+2023-07-18 14:23:56.991 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.007 - INFO - Mensagem recebida: [R] Request 1|9384|000; Origem: 9384
+2023-07-18 14:23:57.007 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 9384
+2023-07-18 14:23:57.023 - INFO - Mensagem recebida: [R] Release 3|9384|000; Origem: 9384
+2023-07-18 14:23:57.023 - INFO - Mensagem recebida: [R] Request 1|9384|000; Origem: 9384
+2023-07-18 14:23:57.024 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.024 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 9384
+2023-07-18 14:23:57.039 - INFO - Mensagem recebida: [R] Release 3|9384|000; Origem: 9384
+2023-07-18 14:23:57.039 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.039 - INFO - Mensagem recebida: [R] Request 1|9384|000; Origem: 9384
+2023-07-18 14:23:57.040 - INFO - Mensagem recebida: [R] Request 1|10092|00; Origem: 10092
+2023-07-18 14:23:57.040 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 9384
+2023-07-18 14:23:57.055 - INFO - Mensagem recebida: [R] Release 3|9384|000; Origem: 9384
+2023-07-18 14:23:57.055 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 10092
+2023-07-18 14:23:57.071 - INFO - Mensagem recebida: [R] Release 3|10092|00; Origem: 10092
+2023-07-18 14:23:57.071 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.071 - INFO - Mensagem recebida: [R] Request 1|10092|00; Origem: 10092
+2023-07-18 14:23:57.072 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 10092
+2023-07-18 14:23:57.087 - INFO - Mensagem recebida: [R] Release 3|10092|00; Origem: 10092
+2023-07-18 14:23:57.087 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.087 - INFO - Mensagem recebida: [R] Request 1|10092|00; Origem: 10092
+2023-07-18 14:23:57.087 - INFO - Mensagem recebida: [R] Request 1|18464|00; Origem: 18464
+2023-07-18 14:23:57.087 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 10092
+2023-07-18 14:23:57.103 - INFO - Mensagem recebida: [R] Release 3|10092|00; Origem: 10092
+2023-07-18 14:23:57.103 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 18464
+2023-07-18 14:23:57.119 - INFO - Mensagem recebida: [R] Release 3|18464|00; Origem: 18464
+2023-07-18 14:23:57.119 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.119 - INFO - Mensagem recebida: [R] Request 1|18464|00; Origem: 18464
+2023-07-18 14:23:57.120 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 18464
+2023-07-18 14:23:57.134 - INFO - Mensagem recebida: [R] Release 3|18464|00; Origem: 18464
+2023-07-18 14:23:57.134 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.134 - INFO - Mensagem recebida: [R] Request 1|18464|00; Origem: 18464
+2023-07-18 14:23:57.135 - INFO - Mensagem recebida: [R] Request 1|20292|00; Origem: 20292
+2023-07-18 14:23:57.135 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 18464
+2023-07-18 14:23:57.149 - INFO - Mensagem recebida: [R] Release 3|18464|00; Origem: 18464
+2023-07-18 14:23:57.149 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20292
+2023-07-18 14:23:57.165 - INFO - Mensagem recebida: [R] Release 3|20292|00; Origem: 20292
+2023-07-18 14:23:57.165 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.165 - INFO - Mensagem recebida: [R] Request 1|20292|00; Origem: 20292
+2023-07-18 14:23:57.166 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20292
+2023-07-18 14:23:57.181 - INFO - Mensagem recebida: [R] Release 3|20292|00; Origem: 20292
+2023-07-18 14:23:57.181 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.181 - INFO - Mensagem recebida: [R] Request 1|20292|00; Origem: 20292
+2023-07-18 14:23:57.182 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 20292
+2023-07-18 14:23:57.197 - INFO - Mensagem recebida: [R] Release 3|20292|00; Origem: 20292
+2023-07-18 14:23:57.197 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.197 - INFO - Mensagem recebida: [R] Request 1|19152|00; Origem: 19152
+2023-07-18 14:23:57.198 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19152
+2023-07-18 14:23:57.213 - INFO - Mensagem recebida: [R] Release 3|19152|00; Origem: 19152
+2023-07-18 14:23:57.213 - INFO - Mensagem recebida: [R] Request 1|19152|00; Origem: 19152
+2023-07-18 14:23:57.213 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.214 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19152
+2023-07-18 14:23:57.229 - INFO - Mensagem recebida: [R] Release 3|19152|00; Origem: 19152
+2023-07-18 14:23:57.229 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.229 - INFO - Mensagem recebida: [R] Request 1|19152|00; Origem: 19152
+2023-07-18 14:23:57.229 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19152
+2023-07-18 14:23:57.245 - INFO - Mensagem recebida: [R] Release 3|19152|00; Origem: 19152
+2023-07-18 14:23:57.245 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.261 - INFO - Mensagem recebida: [R] Request 1|23132|00; Origem: 23132
+2023-07-18 14:23:57.261 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 23132
+2023-07-18 14:23:57.276 - INFO - Mensagem recebida: [R] Release 3|23132|00; Origem: 23132
+2023-07-18 14:23:57.276 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.276 - INFO - Mensagem recebida: [R] Request 1|23132|00; Origem: 23132
+2023-07-18 14:23:57.277 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 23132
+2023-07-18 14:23:57.291 - INFO - Mensagem recebida: [R] Release 3|23132|00; Origem: 23132
+2023-07-18 14:23:57.291 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.291 - INFO - Mensagem recebida: [R] Request 1|23132|00; Origem: 23132
+2023-07-18 14:23:57.292 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 23132
+2023-07-18 14:23:57.307 - INFO - Mensagem recebida: [R] Release 3|23132|00; Origem: 23132
+2023-07-18 14:23:57.307 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.307 - INFO - Mensagem recebida: [R] Request 1|12476|00; Origem: 12476
+2023-07-18 14:23:57.307 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 12476
+2023-07-18 14:23:57.322 - INFO - Mensagem recebida: [R] Release 3|12476|00; Origem: 12476
+2023-07-18 14:23:57.322 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.322 - INFO - Mensagem recebida: [R] Request 1|12476|00; Origem: 12476
+2023-07-18 14:23:57.322 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 12476
+2023-07-18 14:23:57.338 - INFO - Mensagem recebida: [R] Release 3|12476|00; Origem: 12476
+2023-07-18 14:23:57.338 - INFO - Mensagem recebida: [R] Request 1|12476|00; Origem: 12476
+2023-07-18 14:23:57.338 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:23:57.339 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 12476
+2023-07-18 14:23:57.354 - INFO - Mensagem recebida: [R] Release 3|12476|00; Origem: 12476
+2023-07-18 14:23:57.354 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
+2023-07-18 14:24:16.151 - INFO - O coordenador foi encerrado
