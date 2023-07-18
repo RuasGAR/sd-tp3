@@ -43,7 +43,7 @@ def connect_to_coordinator (r_times, k_seconds):
             # Região crítica do processo cliente
             print(f"Process {pid} entering critical section...")
             # Abrir o arquivo e escrever o identificador do processo e a hora atual com milissegundos
-            with open('resultado.txt', 'a') as f:
+            with open('src/resultado.txt', 'a') as f:
                 t_sys = datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")  # with milisseconds
                 f.write(f"Process {pid} - {t_sys}\n")
                 f.close()
