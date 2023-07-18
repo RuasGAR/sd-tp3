@@ -1,5 +1,8 @@
+import sys
+
 def validate():
-    f = open("coordinator-logs.txt", "r")
+    print(sys.path[0])
+    f = open(f"{sys.path[0]}/coordinator-logs.txt", "r")
     lines = f.readlines()
     requests = []
     grants = []
