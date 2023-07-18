@@ -4,7 +4,7 @@ import socket
 import queue
 from utils import fill_length
 
-format = "%(asctime)s - %(levelname)s - %(message)s"
+format = "%(asctime)s.%(msecs)03d - %(levelname)s - %(message)s"
 logging.basicConfig(
     filename='coordinator-logs.txt',
     filemode='w',
@@ -23,25 +23,25 @@ GRANT_MESSAGE = fill_length(f"{GRANT_MESSAGE_ID}|{PORT}|")
 
 # [VARIÁVEIS GLOBAIS]
 request_queue = queue.Queue()
-queue_mutex = threading.Semaphore(1)
+message_queue = queue.Queue()
+
 # dicionário aninhado a ser preenchido da seguinte forma {client_addr:{socket_conn, counter}}
 connections = {}
 connections_mutex = threading.Semaphore(1)
-message = ""
-message_mutex = threading.Semaphore(1)
-message_arrived = threading.Event()
+critical_area_in_use = False
 kill_program = False
+
 
 
 def server_handler():
 
     """ 
-        Inicia um servidor de conexões TCP, responsável por receber clientes
-        e encaminhar seu conteúdo ao algoritmo de exclusão mútua distribuído.
+        Inicia um servidor de conexões UDP, responsável por receber clientes
+        e direcionar o conteúdo de suas mensagens ao algoritmo de exclusão mútua distribuído,
+        no formato de mailbox (na prática, uma fila).
     """
 
-    global request_queue, queue_mutex 
-    global message, message_mutex
+    global request_queue
     global kill_program
 
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -55,31 +55,29 @@ def server_handler():
             
             data, addr = s.recvfrom(10)
             data = data.decode("ascii")
-            m_type, destination, _ = data.split('|')
-            # Como a princípio usamos sempre o mesmo IP, vamos usar as portas como único
-            # identificador de endereço em serviço
-            addr_port = addr[1]
+            m_type, _, _ = data.split('|')
 
-            if int(m_type) == 1:
-                logging.info(f"Mensagem recebida: [R] Request {data}; Origem: {addr_port}")
-            elif int(m_type) == 3:
-                logging.info(f"Mensagem recebida: [R] Release {data}; Origem: {addr_port}")
-            
-            
-            # pondo no dicionário
+            m_type = int(m_type)
+            # Considerando máquinas sempre no mesmo IP, só utilizamos a porta como identificador 
+            addr_port = int(addr[1])
+
+            # Adicionando o endereço ao dicionário de gerenciamento
             connections_mutex.acquire()
-            if addr_port not in connections.keys():
+            if addr not in connections.keys():
                 connections[addr_port] = {"counter":0}
             connections_mutex.release()
             
-            # salvando mensagem
-            message_mutex.acquire()
-            message = data
-            message_mutex.release()
-            
-            message_arrived.set()   
-        
+            # Fila de mensagens
+            message = (m_type, addr_port)
+            message_queue.put(message)
+
+            if m_type == REQUEST_MESSAGE_ID:
+                logging.info(f"Mensagem recebida: [R] Request {data}; Origem: {addr_port}")
+            elif m_type == RELEASE_MESSAGE_ID:
+                logging.info(f"Mensagem recebida: [R] Release {data}; Origem: {addr_port}")                    
+                
         s.close()
+
     logging.info("Servidor encerrado.")
     exit()
 
@@ -89,7 +87,7 @@ def terminal_handler():
         O processamento do input segue as recomendações do enunciado do trabalho.
     """
 
-    global queue_mutex,request_queue
+    global request_queue
     global connections,connections_mutex
     global kill_program
 
@@ -117,11 +115,9 @@ def terminal_handler():
         # Tratamento de ações
         if (command == 1):
             print("Você selecionou a opção 1!\n")
-            queue_mutex.acquire()
             print(f"A fila de pedidos possui {request_queue.qsize()} itens. São eles:")
             for request in request_queue.queue:
                 print(request)
-            queue_mutex.release()
             print('\n')
             
         elif (command == 2):
@@ -136,8 +132,6 @@ def terminal_handler():
             print("Você selecionou a opção 3!\n")
             print("O processo coordenador será encerrado.\n")
             kill_program = True
-            # apenas se a main thread estiver bloqueada
-            message_arrived.set()
             
 
 
@@ -149,68 +143,86 @@ if __name__ == "__main__":
     terminal.start()
     server.start()
 
+    """ 
+        Parte 1: Caixa de Mensagens 
+            
+            - Uma única mensagem é processada por iteração.
+                -> Se for do tipo RELEASE, toma-se a imediata ação de comunicar ao próximo processo da fila que a
+                  região crítica já pode ser utilizada.
+                -> Já se for do tipo REQUEST, o processo é devidamente colocado na fila de pedidos.
+
+            - Se a caixa estiver vazia, pula logo para a segunda parte.
+        
+        Parte 2: Fila de Pedidos 
+            
+            - De forma resumida, caso tenha algum processo na fila, ele terá permissão de acesso concedida. Do contrário,
+              continua-se a execução (dando início a nova iteração)
+       
+    """
+
     # main algorithm
+
     while kill_program == False:
         
-        message_arrived.wait()
+        if not message_queue.empty():
 
-        # necessário checar kill_program caso tenha sido setado enquanto a thread principal esperava
-        if(kill_program == True):
-            exit()
+            # Mensagens já serão colocadas como tupla (tipo_de_mensagem, endereço)
+            message = message_queue.get()
+            m_type,pid = message
 
-        message_mutex.acquire()
-        m_type,pid,_ = message.split('|')
-        message_mutex.release()
-        pid = int(pid)
-        m_type = int(m_type)
+            if m_type == RELEASE_MESSAGE_ID: # release 
+                
+                # pega o próximo da fila
+                if not request_queue.empty():
+                    
+                    next_client_id = request_queue.get()
+                    
+                    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
+                        s.sendto(GRANT_MESSAGE.encode(),(HOST,next_client_id))
+                    
+                    logging.info(f"Mensagem enviada: [S] Grant {GRANT_MESSAGE}; Destino: {next_client_id}")
+                    
+                    connections_mutex.acquire()
+                    connections[next_client_id]["counter"] += 1
+                    connections_mutex.release()
 
-        if m_type == RELEASE_MESSAGE_ID: # release 
-            
-            # pega o próximo da fila
-            queue_mutex.acquire()
+                else:
+                    critical_area_in_use = False
+                    logging.info("Fila de pedidos vazia. Nenhum processo em espera.")
+
+            else: # automaticamente, é um pedido (REQUEST_MESSAGE_ID)
+
+                if request_queue.empty() and not critical_area_in_use: 
+                    
+                    # Concede acesso imediato
+                    critical_area_in_use = True
+                    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
+                        s.sendto(GRANT_MESSAGE.encode(),(HOST,pid))
+
+                    logging.info(f"Mensagem enviada: [S] Grant {GRANT_MESSAGE}; Destino: {pid}")
+                    
+                    # Contabiliza acessos
+                    connections_mutex.acquire()
+                    connections[pid]["counter"] += 1
+                    connections_mutex.release()
+
+                else: # vai pra fila
+                    request_queue.put(pid)
+        
+        if not critical_area_in_use:
 
             if not request_queue.empty():
+                
                 next_client_id = request_queue.get()
-                # faz o envio da mensagem de liberação
+
                 with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
                     s.sendto(GRANT_MESSAGE.encode(),(HOST,next_client_id))
-                    logging.info(f"Mensagem enviada: [S] Grant {GRANT_MESSAGE}; Destino: {next_client_id}")
-                
+
+                logging.info(f"Mensagem enviada: [S] Grant {GRANT_MESSAGE}; Destino: {next_client_id}")
+                    
+                # Contabiliza acessos
                 connections_mutex.acquire()
                 connections[next_client_id]["counter"] += 1
                 connections_mutex.release()
-
-            else:
-                logging.info("Fila de pedidos vazia. Nenhum processo em espera.")
-
-            queue_mutex.release()
-
-        else: # automaticamente, é um pedido (REQUEST_MESSAGE_ID)
-            
-            queue_mutex.acquire()
-
-            if request_queue.empty(): 
-
-                # Concede acesso imediato
-                with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
-                    s.sendto(GRANT_MESSAGE.encode(),(HOST,pid))
-
-                logging.info(f"Mensagem enviada: [S] Grant {GRANT_MESSAGE}; Destino: {pid}")
-                
-                # Contabiliza acessos
-                connections_mutex.acquire()
-                if pid not in connections.keys():
-                    connections[pid] = {"counter":1}
-                else:
-                    connections[pid]["counter"] += 1
-                connections_mutex.release()
-
-            else: # vai pra fila
-                request_queue.put(pid)
-            
-            queue_mutex.release()
-        
-        message_arrived.clear()
-        
 
     exit()

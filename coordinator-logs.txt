@@ -1,0 +1,14 @@
+2023-07-18 03:05:45.890 - INFO - O servidor foi iniciado no endereço 127.0.0.1:8088.
+2023-07-18 03:05:51.295 - INFO - Mensagem recebida: [R] Request 1|19236|00; Origem: 19236
+2023-07-18 03:05:51.296 - INFO - Mensagem recebida: [R] Request 1|19237|00; Origem: 19237
+2023-07-18 03:05:51.296 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19236
+2023-07-18 03:05:52.302 - INFO - Mensagem recebida: [R] Release 3|19236|00; Origem: 19236
+2023-07-18 03:05:52.302 - INFO - Mensagem recebida: [R] Request 1|19236|00; Origem: 19236
+2023-07-18 03:05:52.302 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19237
+2023-07-18 03:05:53.309 - INFO - Mensagem recebida: [R] Release 3|19237|00; Origem: 19237
+2023-07-18 03:05:53.309 - INFO - Mensagem recebida: [R] Request 1|19237|00; Origem: 19237
+2023-07-18 03:05:53.309 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19236
+2023-07-18 03:05:54.324 - INFO - Mensagem recebida: [R] Release 3|19236|00; Origem: 19236
+2023-07-18 03:05:54.324 - INFO - Mensagem enviada: [S] Grant 2|8088|000; Destino: 19237
+2023-07-18 03:05:55.331 - INFO - Mensagem recebida: [R] Release 3|19237|00; Origem: 19237
+2023-07-18 03:05:55.332 - INFO - Fila de pedidos vazia. Nenhum processo em espera.
