@@ -51,6 +51,8 @@ def plot_graph(r_times,k_secs):
         y_vals.append(n)
         x_vals.append(data[n].total_seconds())
 
+    for i in range(len(x_vals)):
+        print(f"r = {r_times}, k = {k_secs}, n = {y_vals[i]} --> t = {x_vals[i]}")
 
     plt.yticks(y_vals)
     plt.ylabel('Number of Threads')

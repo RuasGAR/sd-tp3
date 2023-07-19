@@ -68,8 +68,8 @@ def start_processes(n, rep, k):
         process.join()  # Aguarda o término de todas as threads
 
 if __name__ == "__main__":
-    num_threads = 128  # Número de processos
-    repetitions = 3  # Número de vezes que cada processo entra na região crítica
-    k = 0  # Tempo em segundos que cada processo fica na região crítica
+    num_threads = 8  # Número de processos
+    repetitions = 10  # Número de vezes que cada processo entra na região crítica
+    k = 2  # Tempo em segundos que cada processo fica na região crítica
 
     start_processes(num_threads, repetitions, k)
