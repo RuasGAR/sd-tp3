@@ -48,14 +48,14 @@ def plot_graph(r_times,k_secs):
     y_vals = []
     
     for n in sorted(data.keys()):
-        x_vals.append(n)
-        y_vals.append(data[n].total_seconds())
+        y_vals.append(n)
+        x_vals.append(data[n].total_seconds())
 
 
-    plt.xticks(x_vals)
-    plt.xlabel('Number of Threads')
-    plt.ylabel('Execution Time (sec)')
-    plt.title(f"Time Execution x Number of Threads ({r_times} repetitions, {k_secs} sec interval)")
+    plt.yticks(y_vals)
+    plt.ylabel('Number of Threads')
+    plt.xlabel('Execution Time (sec)')
+    plt.title(f"Number of Threads x Time Execution ({r_times} repetitions, {k_secs} sec interval)")
     plt.plot(x_vals, y_vals, marker='o')
     plt.show()
 
